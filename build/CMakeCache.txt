@@ -296,6 +296,9 @@ UBUNTU:BOOL=TRUE
 UBUNTU_XENIAL:BOOL=TRUE
 
 //Path to a file.
+_file_name:FILEPATH=/home/robond/catkin_ws/src/slam_gmapping/gmapping/test/basic_localization_laser_different_beamcount.test
+
+//Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/include/gmock/gmock.h
 
 //Path to a file.
@@ -307,11 +310,29 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//The directory containing a CMake configuration file for actionlib.
+actionlib_DIR:PATH=/opt/ros/kinetic/share/actionlib/cmake
+
+//The directory containing a CMake configuration file for actionlib_msgs.
+actionlib_msgs_DIR:PATH=/opt/ros/kinetic/share/actionlib_msgs/cmake
+
+//Value Computed by CMake
+add_markers_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/add_markers
+
+//Value Computed by CMake
+add_markers_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/add_markers
+
 //Value Computed by CMake
 ball_chaser_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/ball_chaser
 
 //Value Computed by CMake
 ball_chaser_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/ball_chaser
+
+//The directory containing a CMake configuration file for bond.
+bond_DIR:PATH=/opt/ros/kinetic/share/bond/cmake
+
+//The directory containing a CMake configuration file for bondcpp.
+bondcpp_DIR:PATH=/opt/ros/kinetic/share/bondcpp/cmake
 
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
@@ -337,6 +358,12 @@ controller_manager_msgs_DIR:PATH=/opt/ros/kinetic/share/controller_manager_msgs/
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
 
+//The directory containing a CMake configuration file for diagnostic_msgs.
+diagnostic_msgs_DIR:PATH=/opt/ros/kinetic/share/diagnostic_msgs/cmake
+
+//The directory containing a CMake configuration file for diagnostic_updater.
+diagnostic_updater_DIR:PATH=/opt/ros/kinetic/share/diagnostic_updater/cmake
+
 //Value Computed by CMake
 first_package_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/first_package
 
@@ -360,6 +387,15 @@ gennodejs_DIR:PATH=/opt/ros/kinetic/share/gennodejs/cmake
 
 //The directory containing a CMake configuration file for genpy.
 genpy_DIR:PATH=/opt/ros/kinetic/share/genpy/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/kinetic/share/geometry_msgs/cmake
+
+//Value Computed by CMake
+gmapping_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/slam_gmapping/gmapping
+
+//Value Computed by CMake
+gmapping_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/slam_gmapping/gmapping
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/gtest
@@ -404,8 +440,23 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 //The directory containing a CMake configuration file for hardware_interface.
 hardware_interface_DIR:PATH=/opt/ros/kinetic/share/hardware_interface/cmake
 
+//Value Computed by CMake
+home_service_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/home_service
+
+//Value Computed by CMake
+home_service_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/home_service
+
+//The directory containing a CMake configuration file for interactive_markers.
+interactive_markers_DIR:PATH=/opt/ros/kinetic/share/interactive_markers/cmake
+
+//The directory containing a CMake configuration file for joy.
+joy_DIR:PATH=/opt/ros/kinetic/share/joy/cmake
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
+
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/kinetic/share/message_filters/cmake
 
 //The directory containing a CMake configuration file for message_generation.
 message_generation_DIR:PATH=/opt/ros/kinetic/share/message_generation/cmake
@@ -413,11 +464,29 @@ message_generation_DIR:PATH=/opt/ros/kinetic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/kinetic/share/message_runtime/cmake
 
+//The directory containing a CMake configuration file for move_base_msgs.
+move_base_msgs_DIR:PATH=/opt/ros/kinetic/share/move_base_msgs/cmake
+
 //Value Computed by CMake
 my_robot_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/my_robot
 
 //Value Computed by CMake
 my_robot_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/my_robot
+
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/kinetic/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for nodelet.
+nodelet_DIR:PATH=/opt/ros/kinetic/share/nodelet/cmake
+
+//Value Computed by CMake
+odom_sub_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/odom_sub
+
+//Value Computed by CMake
+odom_sub_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/odom_sub
+
+//The directory containing a CMake configuration file for openslam_gmapping.
+openslam_gmapping_DIR:PATH=/opt/ros/kinetic/share/openslam_gmapping/cmake
 
 //Value Computed by CMake
 pgm_map_creator_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/pgm_map_creator
@@ -425,11 +494,23 @@ pgm_map_creator_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/pgm_map_creator
 //Value Computed by CMake
 pgm_map_creator_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/pgm_map_creator
 
+//Value Computed by CMake
+pick_objects_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/pick_objects
+
+//Value Computed by CMake
+pick_objects_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/pick_objects
+
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/kinetic/share/pluginlib/cmake
 
+//The directory containing a CMake configuration file for rosbag_storage.
+rosbag_storage_DIR:PATH=/opt/ros/kinetic/share/rosbag_storage/cmake
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/kinetic/share/rosconsole/cmake
+
+//The directory containing a CMake configuration file for rosconsole_bridge.
+rosconsole_bridge_DIR:PATH=/opt/ros/kinetic/share/rosconsole_bridge/cmake
 
 //The directory containing a CMake configuration file for roscpp.
 roscpp_DIR:PATH=/opt/ros/kinetic/share/roscpp/cmake
@@ -440,11 +521,17 @@ roscpp_serialization_DIR:PATH=/opt/ros/kinetic/share/roscpp_serialization/cmake
 //The directory containing a CMake configuration file for roscpp_traits.
 roscpp_traits_DIR:PATH=/opt/ros/kinetic/share/roscpp_traits/cmake
 
+//The directory containing a CMake configuration file for rosgraph.
+rosgraph_DIR:PATH=/opt/ros/kinetic/share/rosgraph/cmake
+
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/kinetic/share/rosgraph_msgs/cmake
 
 //The directory containing a CMake configuration file for roslib.
 roslib_DIR:PATH=/opt/ros/kinetic/share/roslib/cmake
+
+//The directory containing a CMake configuration file for roslz4.
+roslz4_DIR:PATH=/opt/ros/kinetic/share/roslz4/cmake
 
 //The directory containing a CMake configuration file for rospack.
 rospack_DIR:PATH=/opt/ros/kinetic/share/rospack/cmake
@@ -452,14 +539,32 @@ rospack_DIR:PATH=/opt/ros/kinetic/share/rospack/cmake
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/kinetic/share/rospy/cmake
 
+//The directory containing a CMake configuration file for rostest.
+rostest_DIR:PATH=/opt/ros/kinetic/share/rostest/cmake
+
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
+
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
 
 //Value Computed by CMake
 simple_arm_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/simple_arm
 
 //Value Computed by CMake
 simple_arm_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/simple_arm
+
+//Value Computed by CMake
+slam_gmapping_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/slam_gmapping/slam_gmapping
+
+//Value Computed by CMake
+slam_gmapping_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/slam_gmapping/slam_gmapping
+
+//Dependencies for the target
+slam_gmapping_nodelet_LIB_DEPENDS:STATIC=general;/opt/ros/kinetic/lib/libnodeletlib.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/kinetic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/kinetic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/kinetic/lib/libroslib.so;general;/opt/ros/kinetic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/kinetic/lib/libgridfastslam.so;general;/opt/ros/kinetic/lib/libscanmatcher.so;general;/opt/ros/kinetic/lib/libsensor_base.so;general;/opt/ros/kinetic/lib/libsensor_range.so;general;/opt/ros/kinetic/lib/libsensor_odometry.so;general;/opt/ros/kinetic/lib/libutils.so;general;/opt/ros/kinetic/lib/libtf.so;general;/opt/ros/kinetic/lib/libtf2_ros.so;general;/opt/ros/kinetic/lib/libactionlib.so;general;/opt/ros/kinetic/lib/libmessage_filters.so;general;/opt/ros/kinetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/opt/ros/kinetic/lib/libxmlrpcpp.so;general;/opt/ros/kinetic/lib/libtf2.so;general;/opt/ros/kinetic/lib/libroscpp_serialization.so;general;/opt/ros/kinetic/lib/librosconsole.so;general;/opt/ros/kinetic/lib/librosconsole_log4cxx.so;general;/opt/ros/kinetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/opt/ros/kinetic/lib/librostime.so;general;/opt/ros/kinetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/opt/ros/kinetic/lib/librosbag_storage.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/opt/ros/kinetic/lib/libroslz4.so;general;/usr/lib/x86_64-linux-gnu/liblz4.so;
+
+//The directory containing a CMake configuration file for smclib.
+smclib_DIR:PATH=/opt/ros/kinetic/share/smclib/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
@@ -469,6 +574,108 @@ teleop_twist_keyboard_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/teleop_twis
 
 //Value Computed by CMake
 teleop_twist_keyboard_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/teleop_twist_keyboard
+
+//The directory containing a CMake configuration file for tf2.
+tf2_DIR:PATH=/opt/ros/kinetic/share/tf2/cmake
+
+//The directory containing a CMake configuration file for tf2_msgs.
+tf2_msgs_DIR:PATH=/opt/ros/kinetic/share/tf2_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2_py.
+tf2_py_DIR:PATH=/opt/ros/kinetic/share/tf2_py/cmake
+
+//The directory containing a CMake configuration file for tf2_ros.
+tf2_ros_DIR:PATH=/opt/ros/kinetic/share/tf2_ros/cmake
+
+//The directory containing a CMake configuration file for tf.
+tf_DIR:PATH=/opt/ros/kinetic/share/tf/cmake
+
+//Value Computed by CMake
+turtlebot_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/turtlebot/turtlebot
+
+//Value Computed by CMake
+turtlebot_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/turtlebot/turtlebot
+
+//Value Computed by CMake
+turtlebot_bringup_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/turtlebot/turtlebot_bringup
+
+//Value Computed by CMake
+turtlebot_bringup_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/turtlebot/turtlebot_bringup
+
+//Value Computed by CMake
+turtlebot_capabilities_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/turtlebot/turtlebot_capabilities
+
+//Value Computed by CMake
+turtlebot_capabilities_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/turtlebot/turtlebot_capabilities
+
+//Value Computed by CMake
+turtlebot_dashboard_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/turtlebot_interactions/turtlebot_dashboard
+
+//Value Computed by CMake
+turtlebot_dashboard_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/turtlebot_interactions/turtlebot_dashboard
+
+//Value Computed by CMake
+turtlebot_description_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/turtlebot/turtlebot_description
+
+//Value Computed by CMake
+turtlebot_description_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/turtlebot/turtlebot_description
+
+//Value Computed by CMake
+turtlebot_gazebo_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/turtlebot_simulator/turtlebot_gazebo
+
+//Value Computed by CMake
+turtlebot_gazebo_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/turtlebot_simulator/turtlebot_gazebo
+
+//Value Computed by CMake
+turtlebot_interactions_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/turtlebot_interactions/turtlebot_interactions
+
+//Value Computed by CMake
+turtlebot_interactions_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/turtlebot_interactions/turtlebot_interactions
+
+//Value Computed by CMake
+turtlebot_interactive_markers_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/turtlebot_interactions/turtlebot_interactive_markers
+
+//Value Computed by CMake
+turtlebot_interactive_markers_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/turtlebot_interactions/turtlebot_interactive_markers
+
+//Value Computed by CMake
+turtlebot_rviz_launchers_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/turtlebot_interactions/turtlebot_rviz_launchers
+
+//Value Computed by CMake
+turtlebot_rviz_launchers_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/turtlebot_interactions/turtlebot_rviz_launchers
+
+//Value Computed by CMake
+turtlebot_simulator_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/turtlebot_simulator/turtlebot_simulator
+
+//Value Computed by CMake
+turtlebot_simulator_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/turtlebot_simulator/turtlebot_simulator
+
+//Value Computed by CMake
+turtlebot_stage_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/turtlebot_simulator/turtlebot_stage
+
+//Value Computed by CMake
+turtlebot_stage_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/turtlebot_simulator/turtlebot_stage
+
+//Value Computed by CMake
+turtlebot_stdr_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/turtlebot_simulator/turtlebot_stdr
+
+//Value Computed by CMake
+turtlebot_stdr_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/turtlebot_simulator/turtlebot_stdr
+
+//Value Computed by CMake
+turtlebot_teleop_BINARY_DIR:STATIC=/home/robond/catkin_ws/build/turtlebot/turtlebot_teleop
+
+//Value Computed by CMake
+turtlebot_teleop_SOURCE_DIR:STATIC=/home/robond/catkin_ws/src/turtlebot/turtlebot_teleop
+
+//The directory containing a CMake configuration file for urdf.
+urdf_DIR:PATH=/opt/ros/kinetic/share/urdf/cmake
+
+//The directory containing a CMake configuration file for visualization_msgs.
+visualization_msgs_DIR:PATH=/opt/ros/kinetic/share/visualization_msgs/cmake
+
+//The directory containing a CMake configuration file for xacro.
+xacro_DIR:PATH=/opt/ros/kinetic/share/xacro/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
@@ -587,7 +794,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

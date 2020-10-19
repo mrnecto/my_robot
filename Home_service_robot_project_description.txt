@@ -1,0 +1,30 @@
+The project contains five scripts:
+test_slam.sh uses:
+	turtlebot_gazebo package with MyWorld.world from my_robot package for gazebo and mapping
+	rviz
+	turtlebot_teleop
+Description: creating map by robot.
+	
+test_navigation.sh uses:
+	turtlebot_gazebo package with MyWorld.world from my_robot package for gazebo and localization
+	rviz
+Description: testing navigation for robot on created by test_slam map.
+	
+pick_objects.sh uses:
+	turtlebot_gazebo package with MyWorld.world from my_robot package for gazebo and localization
+	rviz
+	pick_objects 
+Description: creating trajectory to goal.
+	
+add_markers.sh
+	turtlebot_gazebo package with MyWorld.world from my_robot package for gazebo and localization
+	rviz
+	add_markers
+Description: creating markers on the map
+	
+home_service.sh
+	turtlebot_gazebo package with MyWorld.world from my_robot package for gazebo and localization
+	rviz
+	add_markers
+	pick_objects 
+Description: creating and removing markers on the map by robot events

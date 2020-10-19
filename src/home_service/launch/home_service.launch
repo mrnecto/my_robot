@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+ <!-- The pick_object node -->
+  <node name="home_service" type="home_service" pkg="home_service" output="screen">
+  </node>
+
+</launch>

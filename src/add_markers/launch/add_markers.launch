@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+ <!-- The pick_object node -->
+  <node name="add_markers" type="add_markers" pkg="add_markers" output="screen">
+  </node>
+
+</launch>
